@@ -18,7 +18,7 @@ console.log('loading GoogleMaps.js');
 		var ExpKey = 'TqX8GSt3vGi8YnWpsbePFveQBTxRi1dF';
 	
 		function searchPOI(poi){
-			var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + poi + '&format=json&callback=wikiCallbackFunction';
+			var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + poi + '&format=json&callback=wikiCallbackFunction';
 			$.ajax({
 				url : wikiUrl,
 				crossDomain: true,
@@ -34,7 +34,7 @@ console.log('loading GoogleMaps.js');
 
 		function findPointOfInterest(lat, lng) {
 			var loc = lat + ',' + lng;
-			var ExpUrl = 'http://terminal2.expedia.com/x/geo/features?within=2km&lng=' + lng+ '&lat=' + lat + '&type=point_of_interest&apikey=' + ExpKey;
+			var ExpUrl = 'https://terminal2.expedia.com/x/geo/features?within=2km&lng=' + lng+ '&lat=' + lat + '&type=point_of_interest&apikey=' + ExpKey;
 			$.ajax({
 					url : ExpUrl,
 					crossDomain: true,
