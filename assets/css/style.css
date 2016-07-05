@@ -1,0 +1,53 @@
+body {
+	font-family: 'Bangers', cursive;
+	background-color:black;
+}
+form{
+	background-color:  #2fb7c5;
+	padding-top: 25px;
+	/*padding-bottom: 500px;*/
+}
+.funmyway{
+	background-color:  #2fb7c5;	
+}
+.funtop, #map, #panel {
+	border-top-right-radius: 10px;
+	border-top-left-radius : 10px;
+}
+.funbottom, #map, #panel {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius : 10px;
+}
+.form-group{
+   margin-bottom: 0px;
+}
+
+input[type=text] {
+    border: 2px solid pink;
+    border-radius: 4px;
+    width: 250px;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+.flickrWell {
+	width: 390px;
+	height: 300px;
+	overflow: auto;
+}
+.img-rounded {
+	height: 200px;
+}
+.googlemap {
+	width:800px;
+}
+#map{
+	/*width: 650px;*/
+	height: 600px;
+	border:1px solid green;
+}
+#panel {
+	/*width: 200px;*/
+	height: 600px;
+	background-color: white;
+	overflow: auto;"
+}
