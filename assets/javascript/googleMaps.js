@@ -34,7 +34,7 @@ console.log('loading GoogleMaps.js');
 
 		function findPointOfInterest(lat, lng) {
 			var loc = lat + ',' + lng;
-			var ExpUrl = 'https://terminal2.expedia.com/x/geo/features?within=2km&lng=' + lng+ '&lat=' + lat + '&type=point_of_interest&apikey=' + ExpKey;
+			var ExpUrl = 'https://crossorigin.me/http://terminal2.expedia.com/x/geo/features?within=2km&lng=' + lng+ '&lat=' + lat + '&type=point_of_interest&apikey=' + ExpKey;
 			$.ajax({
 					url : ExpUrl,
 					crossDomain: true,
