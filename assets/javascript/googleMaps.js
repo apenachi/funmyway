@@ -21,6 +21,7 @@ console.log('loading GoogleMaps.js');
 			var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + poi + '&format=json&callback=wikiCallbackFunction';
 			$.ajax({
 				url : wikiUrl,
+				crossDomain: true,
 				type : 'GET',
 				dataType: "jsonp",
 				success: function(wikiResponse) {
@@ -36,6 +37,7 @@ console.log('loading GoogleMaps.js');
 			var ExpUrl = 'https://terminal2.expedia.com/x/geo/features?within=2km&lng=' + lng+ '&lat=' + lat + '&type=point_of_interest&apikey=' + ExpKey;
 			$.ajax({
 					url : ExpUrl,
+					crossDomain: true,
 					type: 'GET',
 					success: function(data)
 					{
