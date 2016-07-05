@@ -83,7 +83,6 @@ console.log('loading GoogleMaps.js');
 					label: 'A'
 				});
 				marker.setMap(map);
-				routeBoxer = new RouteBoxer();
 			}); 
 		}
 
