@@ -88,10 +88,11 @@ console.log('loading GoogleMaps.js');
 
 		initialize();
 
-		$('#sumbitForm').on('click', function() {
+		$('#searchForm').on('submit', function() {
 			var location = $('#location').val();
 			$('#location').val('');
 			getDirections(currentPosition, location);
+			return false;
 		});
 		$('#delMarkers').on('click', function() {
 			removePointOfInterest();
